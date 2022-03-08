@@ -1,0 +1,22 @@
+.header{
+    background-color: rgb(105, 87, 122);
+    background-size : 100%;
+    color:aliceblue;
+}
+.header img{
+    width: 40%;
+}
+.footer{
+    background-color: rgb(105, 87, 122);
+    background-size : 100%;
+    color:aliceblue;
+    margin-top: 20px;
+}
+.footer img{
+    margin-top: 10px;
+    width: 10%;
+}
+.nav-link{
+    color:aliceblue;
+    font-weight: bold;
+}

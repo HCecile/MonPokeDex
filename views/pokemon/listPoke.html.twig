@@ -1,0 +1,25 @@
+{% extends "./../main.html.twig" %}
+
+{% block main %}
+<div class="container mt-5">
+<div class="row">
+{% for pokemon in poks %}
+    <div class="col-md-3 card mx-auto">
+        <div class="card-body">
+            <h5 class="card-title text-center">{{pokemon.name}}</h5>
+            <p class="card-text text-center">{{pokemon.type}}</p>
+            <p class="card-text text-center">{{pokemon.pointCombat}}</p>
+            <p class="card-text text-center">{{pokemon.pointVie}}</p>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="/updatePoke/{{pokemon._id}}" class="btn btn-warning ">modifer</a>
+                    <a href="/deletePoke/{{pokemon._id}}" class="btn btn-danger ">supprimer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+</div>
+{% endblock %}
